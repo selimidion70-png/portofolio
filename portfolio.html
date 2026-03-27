@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Selim Idion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-content {
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.4);
+            background: #667eea;
+            color: white;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #f9f9f9;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .project-card a:hover {
+            color: #764ba2;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #764ba2;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selim Idion</h1>
+        <p>Développeur Web & Passionné par la Technologie</p>
+    </header>
+
+    <nav>
+        <a href="#about">À Propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Section À Propos -->
+        <section id="about">
+            <h2>À Propos de Moi</h2>
+            <div class="about-content">
+                <p>Bonjour ! Je suis un développeur passionné par la création de solutions web modernes et innovantes. Avec plusieurs années d'expérience, je maîtrise les technologies front-end et back-end.</p>
+                <p>J'aime relever des défis techniques, apprendre de nouvelles technologies et créer des applications qui font une différence.</p>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills">
+            <h2>Compétences</h2>
+            <div class="skills">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">API REST</div>
+                <div class="skill-card">Responsive Design</div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects">
+            <h2>Mes Projets</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>🌐 Site Web E-commerce</h3>
+                    <p>Une plateforme e-commerce complète avec panier, paiement et gestion de stock. Développé avec React et Node.js.</p>
+                    <a href="#">Voir le projet →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>📱 Application Mobile</h3>
+                    <p>Une application mobile pour la gestion de tâches avec synchronisation en temps réel. Utilise React Native et Firebase.</p>
+                    <a href="#">Voir le projet →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>🤖 Chatbot IA</h3>
+                    <p>Un assistant chatbot intelligent utilisant le machine learning. Intégré dans une plateforme web interactive.</p>
+                    <a href="#">Voir le projet →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <div class="contact-info">
+                <p>📧 Email : <a href="mailto:contact@example.com">contact@example.com</a></p>
+                <p>💼 LinkedIn : <a href="https://linkedin.com" target="_blank">Mon profil LinkedIn</a></p>
+                <p>💻 GitHub : <a href="https://github.com/selimidion70-png" target="_blank">Mon GitHub</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Selim Idion. Tous droits réservés. | Portfolio en ligne avec GitHub Pages</p>
+    </footer>
+</body>
+</html>
